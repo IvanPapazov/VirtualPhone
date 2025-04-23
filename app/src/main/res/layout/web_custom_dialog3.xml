@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/DbtnCD3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/web_roundablebtn2"
+        android:text="Готово"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <EditText
+        android:id="@+id/BnameD3"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="90dp"
+        android:hint="Име"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/BurlD3"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="25dp"
+
+        android:hint="URL"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/CbtnCD3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/web_roundablebtn2"
+
+        android:text="Назад"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MainNavigation"
+        tools:targetApi="31">
+        <activity
+            android:name=".ContactsActivityClickInList"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".ContactsActivityAddNewContact"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".ContactsActivityMain"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Memory"
+            android:exported="false" />
+        <activity
+            android:name=".TicTakToe"
+            android:exported="false" />
+        <activity
+            android:name=".Navigation"
+            android:exported="false" />
+        <activity
+            android:name=".Clock"
+            android:exported="false" />
+        <activity
+            android:name=".Chrono"
+            android:exported="false" />
+        <activity
+            android:name=".SchedulerMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateScheduleItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false"
+            />
+
+        <activity
+            android:name=".YouTube_Screen"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            />
+        <activity
+            android:name=".YouTube_MainAct"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".Messenger"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".paint_MainActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".web_Bookmarks_activity"
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".web_History_activity"
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".web_BrowserMain"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".camera_PreviewMediaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".camera_GalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".camera_MainActivity"
+            android:exported="true">
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/camera_provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".calc_MainActivity"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>

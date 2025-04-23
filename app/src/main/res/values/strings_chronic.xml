@@ -1,0 +1,7 @@
+<resources>
+    <string name="clockDivChronic">:</string>
+    <string name="setTime">Set Time</string>
+    <string name="dateDivChronic">/</string>
+    <string name="btnClockChronic">Clock</string>
+    <string name="btnChrono">Chronometer</string>
+</resources>

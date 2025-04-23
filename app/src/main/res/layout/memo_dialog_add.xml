@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/addNotesMemo"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/memo_round"
+        android:backgroundTint="@color/white"
+        android:hint="Минимална дължина: 5 знака"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#5E5E5E"
+        tools:ignore="SpeakableTextPresentCheck"></EditText>
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/backBtnDialogMemo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+
+            android:background="@drawable/btn_background"
+            android:text="Назад"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </Button>
+
+        <Button
+            android:id="@+id/addBtnDialogMemo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_background"
+            android:text="Добави"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </Button>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

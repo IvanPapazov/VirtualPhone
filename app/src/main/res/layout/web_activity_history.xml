@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".web_History_activity">
+
+
+    <RelativeLayout
+        android:id="@+id/blackLine"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black">
+
+
+        <Button
+            android:id="@+id/btnHBack"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/web_roundablebtn"
+            android:text="Назад"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/btnHDel"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/web_roundablebtn"
+            android:src="@drawable/web_ic_outline_delete_outline_24"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listviewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="349dp"
+        android:layout_below="@+id/blackLine"
+        android:divider="@color/black"
+        >
+
+
+
+
+    </ListView>
+
+
+</RelativeLayout>

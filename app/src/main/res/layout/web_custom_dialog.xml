@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="!"
+        android:textColor="@color/black"
+        android:textSize="40pt" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="5dp"
+
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:text="Сигурни ли сте, че искате да изтриете цялата история на браузъра?"
+        android:textColor="@color/black"
+        android:textSize="9pt" />
+
+    <Button
+        android:id="@+id/YbtnCD"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/web_roundablebtn2"
+        android:text="Да"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/CbtnCD"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/web_roundablebtn2"
+        android:text="Не"
+        android:textColor="@color/white"
+
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paint_MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_main_paint"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <ImageButton
+
+                    android:id="@+id/btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_ripple_paint"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/close_icon_round_paint" />
+
+
+                <ImageButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_ripple_paint"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/save_icon_round_paint"
+                    android:text="Save" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:divider="@drawable/divider_main_paint"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+                <ImageButton
+                    android:id="@+id/btn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_ripple_paint"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/clear_icon_round_paint"
+                    android:text="clear" />
+
+                <ImageButton
+
+                    android:id="@+id/btn_undo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_ripple_paint"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:src="@drawable/undo_icon_round_paint"
+                    android:text="Undo" />
+
+                <ImageButton
+                    android:id="@+id/btn_redo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_ripple_paint"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/redo_icon_round_paint" />
+
+
+
+
+                <ImageButton
+
+                    android:id="@+id/btn_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_ripple_paint"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/colorpicker_icon_round_paint"
+                    android:text="Color" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.os0.navigation.paint_DrawView
+        android:id="@+id/draw_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:showDividers="middle"
+        android:layout_alignParentBottom="true"
+        android:divider="@drawable/divider_main_paint">
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

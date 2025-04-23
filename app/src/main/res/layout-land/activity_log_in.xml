@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="0dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/logo_project" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/textViewHeadLine"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Влизане"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/LogInEditTextEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/LogInEditTextPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Парола"
+                android:inputType="textPassword"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/LogInButtonContinue"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_pattern_login_screen"
+                android:paddingLeft="15dp"
+                android:paddingTop="0dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="0dp"
+                android:text="Продължи"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/LogInButtonNewAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_pattern_login_screen"
+                android:paddingLeft="15dp"
+                android:paddingTop="0dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="0dp"
+                android:text="Все още нямате анаунт?"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

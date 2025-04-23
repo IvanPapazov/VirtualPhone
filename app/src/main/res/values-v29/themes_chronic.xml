@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Clock" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorPrimary">@color/reddish</item>
+        <item name="colorPrimaryDark">@color/reddish</item>
+        <item name="colorAccent">@color/reddish</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:showDividers="middle"
+
+        android:divider="@drawable/divider_paint"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Запази изображението като:"
+
+            android:textSize="16sp"
+
+            ></TextView>
+
+
+
+        <EditText
+            android:id="@+id/save_name_paint"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+
+            android:hint="......./.png"
+
+
+
+            > </EditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:layout_gravity="center"
+            android:divider="@drawable/divider_paint">
+
+            <Button
+                android:id="@+id/cancelBtnPaint"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/black"
+                android:text="Откажи"
+                android:textColor="@color/white"
+
+                ></Button>
+
+            <Button
+                android:id="@+id/saveBtnPaint"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/black"
+                android:text="Запази"
+                android:textColor="@color/white"
+
+                ></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

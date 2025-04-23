@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YouTube_MainAct"
+    >
+
+    <RelativeLayout
+        android:id="@+id/YouTubeRelativeL"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/YouTubeAddBtn"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/YouTubeLinkEditText"
+            android:background="@drawable/btn_background"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/YouTubeLinkEditText"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="URL"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/YoutubeScroll"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/YouTubeRelativeL">
+
+        <LinearLayout
+            android:id="@+id/YouTubeLinearL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

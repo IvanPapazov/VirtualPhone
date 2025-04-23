@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".web_Bookmarks_activity">
+
+    <RelativeLayout
+        android:id="@+id/blackLine"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black"
+        tools:ignore="InvalidId">
+
+        <Button
+            android:id="@+id/btnBBack"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/web_roundablebtn"
+            android:text="Назад"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnBAdd"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/btnBDel"
+            android:background="@drawable/web_roundablebtn"
+            android:text="Добави"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/btnBDel"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/web_roundablebtn"
+            android:src="@drawable/web_ic_outline_delete_outline_24"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listviewBookmarks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blackLine" />
+
+
+
+</RelativeLayout>

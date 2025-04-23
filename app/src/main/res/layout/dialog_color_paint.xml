@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:showDividers="middle"
+    android:divider="@drawable/divider_paint"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Избери цвят"
+
+        android:textSize="16sp"
+
+        ></TextView>
+
+    <RadioGroup
+        android:id="@+id/rgroupPaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_paint"
+        tools:ignore="InvalidId">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:divider="@drawable/divider_paint">
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/btnBlackPaint"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               android:tag="#000000"
+                android:background="@drawable/black_color_selector_paint"  />
+
+            <RadioButton
+                android:button="@null"
+           android:id="@+id/btnGreenPaint"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:tag="#FFFFFF"
+
+                android:background="@drawable/white_color_selector_paint" ></RadioButton>
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/btnGrayPaint"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               android:tag="#676767"
+
+                android:background="@drawable/gray_color_selector_paint" ></RadioButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:divider="@drawable/divider_paint"
+            >
+
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/btnRedPaint"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               android:tag="#FF0000"
+                android:background="@drawable/red_color_selector_paint" />
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/btnWhitePaint"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:tag="#00FF00"
+
+                android:background="@drawable/green_color_selector_paint" />
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/btnBluePaint"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+            android:tag="#0000FF"
+
+                android:background="@drawable/blue_color_selector_paint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:divider="@drawable/divider_paint">
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/btnYellowPaint"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+      android:tag="#FFEB3B"
+                android:background="@drawable/yellow_color_selector_paint"  />
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/btnPinkPaint"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+     android:tag="#EF82FF"
+
+                android:background="@drawable/pink_color_selector_paint" />
+
+            <RadioButton
+                android:button="@null"
+                android:id="@+id/btnOrangePaint"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+android:tag="#FF9800"
+                android:textColor="@color/black"
+                android:background="@drawable/orange_color_selector_paint" />
+
+        </LinearLayout>
+
+
+
+            <EditText
+            android:id="@+id/hex_paint"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+
+            android:textAlignment="center"
+            android:textSize="16sp"
+                android:backgroundTint="#000000"
+            android:hint="#hexcolor"
+
+            > </EditText>
+
+
+
+
+
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:divider="@drawable/divider_main_paint">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="Ширина на хода"
+            android:textSize="16sp"
+
+            />
+
+<!--        <com.google.android.material.slider.RangeSlider-->
+<!--            android:id="@+id/rangebar"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone" />-->
+
+        <Button
+            android:id="@+id/backBtnPaint"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:text="Назад"
+            android:textColor="@color/white"
+
+            ></Button>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>
